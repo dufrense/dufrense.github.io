@@ -36,7 +36,12 @@ store 下面再添 index.js export { reducer };
 ![](http://img.deliberate-practice.club/reduxExportWhole.png)
 接下来，再用的话， import { 总出口导出的变量 } from 公共出口
 
+引入 import {fromJS} from 'immutable';
+修改时 **return** state.set('[property]', value) 
 
+两级的语法不同 state.element.get('[property]')
+所以，将 state 也变成一个 immutable 对象，之来源： 大的store里面的reducer.js
+combineReducer 让之来源于 redux-immutable 就可以了
 
 
 
