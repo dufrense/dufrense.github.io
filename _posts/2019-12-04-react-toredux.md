@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "从0到redux"
-date:   14:10 2019-08-23
+date:   14:10 2019-12-04
 categories: react
 tags: redux
 ---
