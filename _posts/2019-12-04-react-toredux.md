@@ -21,3 +21,13 @@ mapDispatchToProps 里面是 return { m(){} }
 mapStateToProps = (state) => {
 不是 (props)******，同样也是 return {}
 ```
+
+如要分离再整合
+reducer.js -> element/store/reducer.js
+
+内容移去，然后 import 之
+再 import combineReducers 函数，此调用而无返回，前台是 header: 别名
+store 下面再添 index.js export { reducer };
+接下来，要用 element/store的reducer 直接通过 store 就默认导入了
+
+
